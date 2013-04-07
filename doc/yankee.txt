@@ -1,0 +1,88 @@
+*yankee.txt* add a command to append hello world to the current buffer.
+
+TODO: Change description
+
+================================================================================
+CONTENTS                                                   *yankee-contents*
+
+    1. General..............................|yankee-general|
+        1.1 Mappings........................|yankee-mappings|
+        1.2 Options.........................|yankee-options|
+    2. Section 2............................|yankee-section-2|
+        2.1 Section 2.1.....................|yankee-section-2-1|
+        2.2 Section 2.2.....................|yankee-section-2-2|
+        2.3 Sectin 2.3......................|yankee-section-2-3|
+    3. About................................|yankee-about|
+
+================================================================================
+                                                            *yankee-general*
+1. General~
+
+
+--------------------------------------------------------------------------------
+                                                           *yankee-mappings*
+1.1 Mappings~
+
+The default mapping to append hello world to the buffer is:
+>
+    <leader>vhw
+<
+TODO: fix information about mappings.
+
+--------------------------------------------------------------------------------
+                                                            *yankee-options*
+1.2 Options~
+
+Currently no options available!
+
+TODO: fix information about options.
+
+================================================================================
+                                                          *yankee-section-2*
+2. Section 2~
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
+lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
+velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
+augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
+metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
+
+--------------------------------------------------------------------------------
+                                                        *yankee-section-2-1*
+2.1 Section 2.1~
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
+lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
+velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
+augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
+metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
+
+--------------------------------------------------------------------------------
+                                                        *yankee-section-2-2*
+2.2 Section 2.2~
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
+lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
+velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
+augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
+metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
+
+--------------------------------------------------------------------------------
+                                                        *yankee-section-2-3*
+2.3 Section 2.3~
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
+lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
+velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
+augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
+metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
+
+================================================================================
+                                                              *yankee-about*
+3. About~
+
+yankee is ??? (TODO: add license type) licensed.
+
+Get the latest version and report bugs at GitHub:
+
+TODO: github url
