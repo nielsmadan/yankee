@@ -13,3 +13,6 @@ Features include:
   something else in between).
 * keep track of changes and yanks.
 * choose text to paste from list of deletes/changes/yanks.
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/31c136673d5d1c549a9aa32041edf7cb
+"githalytics.com")](http://githalytics.com/nielsmadan/yankee)
