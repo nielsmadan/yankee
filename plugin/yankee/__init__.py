@@ -1,1 +1,1 @@
-from yankee.greetings import append_hello_world
+from yankee.main import lock_paste_register, unlock_paste_register
