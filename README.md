@@ -14,5 +14,9 @@ Features include:
 * keep track of changes and yanks.
 * choose text to paste from list of deletes/changes/yanks.
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/31c136673d5d1c549a9aa32041edf7cb
-"githalytics.com")](http://githalytics.com/nielsmadan/yankee)
+Installation
+------------
+
+yankee depends on venom. Best way to install is with [vim-plug](https://github.com/junegunn/vim-plug):
+
+ Plug 'nielsmadan/venom' | Plug 'nielsmadan/yankee'
