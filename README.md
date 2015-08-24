@@ -20,3 +20,12 @@ Installation
 yankee depends on venom. Best way to install is with [vim-plug](https://github.com/junegunn/vim-plug):
 
  Plug 'nielsmadan/venom' | Plug 'nielsmadan/yankee'
+
+Options
+-------
+
+Yankee works by storing the content of the default register into a named register, and then overwriting p/P commands to
+paste from there (and undoing the mapping later). By default it will use the named 'o' register for this. This can be
+overwritten:
+
+ let g:yankee_lock_register = "t"
