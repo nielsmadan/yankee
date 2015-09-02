@@ -1,4 +1,7 @@
-Given:
+After:
+  YankeeUnlockPasteRegister
+
+Given (Toggle test):
   1
   2
   3
@@ -11,6 +14,9 @@ Do:
   jj
   dd
   p
+  ,yt
+  j
+  p
 
 Expect:
   1
@@ -18,3 +24,93 @@ Expect:
   4
   1
   5
+  3
+
+Given (Lock/unlock test):
+  1
+  2
+  3
+  4
+  5
+
+Do:
+  yy
+  ,yl
+  jj
+  dd
+  p
+  ,yu
+  j
+  p
+
+Expect:
+  1
+  2
+  4
+  1
+  5
+  3
+
+Given (Test unlock without lock):
+  1
+  2
+  3
+  4
+  5
+
+Do:
+  yy
+  ,yu
+  jj
+  dd
+  p
+
+Expect:
+  1
+  2
+  4
+  3
+  5
+
+Given (Test double lock):
+  1
+  2
+  3
+  4
+  5
+
+Do:
+  yy
+  ,yl
+  jj
+  dd
+  ,yl
+  dd
+  p
+
+Expect:
+  1
+  2
+  5
+  3
+
+Given (Use correct register (lock)):
+  asdf
+
+Do:
+  yw
+  ,yl
+
+Execute:
+  AssertEqual "asdf", @o
+
+Given (Use correct register (toggle)):
+  jkll
+
+Do:
+  yw
+  ,yt
+
+Execute:
+  AssertEqual "jkll", @o
+
