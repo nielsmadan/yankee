@@ -1,0 +1,12 @@
+call plug#begin(".tmp")
+        Plug 'nielsmadan/venom'
+        Plug 'junegunn/vader.vim'
+call plug#end()
+
+PlugInstall
+
+set nocompatible
+
+let mapleader = ","
+
+so ../plugin/yankee.vim
