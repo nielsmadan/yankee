@@ -1,3 +1,6 @@
+Before:
+  let @o=""
+
 After:
   YankeeUnlockPasteRegister
 
@@ -97,20 +100,37 @@ Expect:
 Given (Use correct register (lock)):
   asdf
 
-Do:
-  yw
-  ,yl
-
 Execute:
+  normal yw
+  normal ,yl
   AssertEqual "asdf", @o
 
 Given (Use correct register (toggle)):
   jkll
 
-Do:
-  yw
-  ,yt
-
 Execute:
+  normal yw
+  normal ,yt
   AssertEqual "jkll", @o
 
+Given (Use user-defined register (lock)):
+  qwer
+
+Execute:
+  let g:yankee_lock_register = "t"
+  normal yw
+  normal ,yl
+  AssertEqual "qwer", @t
+  AssertEqual "", @o
+  unlet g:yankee_lock_register
+
+Given (Use correct register (toggle)):
+  gfds
+
+Execute:
+  let g:yankee_lock_register = "t"
+  normal yw
+  normal ,yt
+  AssertEqual "gfds", @t
+  AssertEqual "", @o
+  unlet g:yankee_lock_register
