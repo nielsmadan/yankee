@@ -55,7 +55,7 @@ This would then change it to '<leader>q'.
 
 3. About~
 
-yankee is MIT licensed.
+mercury is ICS licensed (think BSD with less verbiage).
 
 Get the latest version and report bugs at GitHub:
 
