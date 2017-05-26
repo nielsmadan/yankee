@@ -10,7 +10,7 @@
 
 ### features
 
-* `[ ]` better
+* `[ ]` pick text to paste using a menu
 
 ### options
 
@@ -26,23 +26,24 @@
 
 ### features
 
-* `[ ]` lock default register
-* `[ ]` keep track of yanks and changes
-* `[ ]` pick text to paste using a menu
+* `[X]` lock default register
+* `[ ]` easily paste from system register.
+* `[ ]` lock previous default register (instead of current).
 
 ### options
 
-* `[ ]` implement options to change / disable mappings
+* `[X]` implement options to change / disable mappings
 
 ### documentation
 
-* `[ ]` write help file
+* `[X]` write help file
 
 ### tests
 
-* `[ ]` have some!
+* `[X]` have some!
+* `[ ]` test prefix
 
 ### misc
 
 * `[X]` clone venom-plugin-template
-* `[ ]` write README
+* `[X]` write README
