@@ -38,3 +38,10 @@ if 'vim' not in sys.modules:
             self.buffer = ''
 
     vim.current = _dummy_current()
+
+    class _dummy_registers(object):
+        @staticmethod
+        def copy(_, __):
+            pass
+
+    vim.registers = _dummy_registers

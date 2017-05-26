@@ -2,7 +2,7 @@ import sys
 import types
 
 if 'venom' not in sys.modules:
-    _venom_stub = types.ModuleType('Dummy Vim Module', "Dummy")
+    _venom_stub = types.ModuleType('Dummy Venom Module', "Dummy")
     sys.modules['venom'] = _venom_stub
 
     import venom

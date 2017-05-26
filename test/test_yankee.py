@@ -6,8 +6,9 @@ import venom_stub
 
 import yankee
 
-class TestGreeting(unittest.TestCase):
-    def test_get_greeting(self):
-        result = yankee.greetings._get_greeting()
+class TestYankee(unittest.TestCase):
+    # doesn't test anything useful at the moment, but at least runs.
+    def test_get_lock_register(self):
+        result = yankee.lock_paste_register()
 
-        eq_(result, "Hello World")
+        eq_(result, None)
