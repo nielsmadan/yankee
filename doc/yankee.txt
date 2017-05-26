@@ -1,9 +1,8 @@
-*yankee.txt* add a command to append hello world to the current buffer.
+*yankee.txt* minimal plugin to make yanking less annoying.
 
-TODO: Change description
+Yankee is a minimal plugin that tries to fix some of the annoyances around yanking in vim.
 
-================================================================================
-CONTENTS                                                   *yankee-contents*
+================================================================================ CONTENTS *yankee-contents*
 
     1. General..............................|yankee-general|
         1.1 Mappings........................|yankee-mappings|
@@ -14,75 +13,50 @@ CONTENTS                                                   *yankee-contents*
         2.3 Sectin 2.3......................|yankee-section-2-3|
     3. About................................|yankee-about|
 
-================================================================================
-                                                            *yankee-general*
+================================================================================ *yankee-general*
+
 1. General~
 
+Current features:
 
---------------------------------------------------------------------------------
-                                                           *yankee-mappings*
+* locking default paste register (so that `p` will keep pasting the same thing, even if you delete/change/yank
+  something else in between).
+
+v1.0 features:
+
+* easily paste from system clipboard
+
+-------------------------------------------------------------------------------- *yankee-mappings*
+
 1.1 Mappings~
 
-The default mapping to append hello world to the buffer is:
->
-    <leader>vhw
-<
-TODO: fix information about mappings.
+ <leader>yl - Lock the paste register (p will continue to paste the same thing even if you yank other text) 
+ <leader>yu - Unlock the paste register (p will paste whatever was last yanked again).
+ <leader>yt - Toggle lock / unlock paste register.
 
---------------------------------------------------------------------------------
-                                                            *yankee-options*
+-------------------------------------------------------------------------------- *yankee-options*
+
 1.2 Options~
 
-Currently no options available!
+Yankee works by storing the content of the default register into a named register, and then overwriting p/P commands to
+paste from there (and undoing the mapping later). By default it will use the named 'o' register for this. This can be
+overwritten using:
 
-TODO: fix information about options.
+ let g:yankee_lock_register = "t"
 
-================================================================================
-                                                          *yankee-section-2*
-2. Section 2~
+All yankee commands start with '<leader>y'. If you'd like to use another prefix rather than 'y' you can overwrite this
+using:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
-lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
-velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
-augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
-metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
+ let g:yankee_prefix = "q"
 
---------------------------------------------------------------------------------
-                                                        *yankee-section-2-1*
-2.1 Section 2.1~
+This would then change it to '<leader>q'.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
-lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
-velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
-augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
-metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
+================================================================================ *yankee-about*
 
---------------------------------------------------------------------------------
-                                                        *yankee-section-2-2*
-2.2 Section 2.2~
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
-lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
-velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
-augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
-metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
-
---------------------------------------------------------------------------------
-                                                        *yankee-section-2-3*
-2.3 Section 2.3~
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra
-lectus. Curabitur sit amet egestas ipsum.  Curabitur pellentesque vestibulum
-velit, et volutpat lacus fermentum at. Cras quis nibh tortor, non pharetra
-augue.  Donec eu felis quis nibh ultricies pharetra. Morbi eu velit mi. Ut eget
-metus mi, at tincidunt metus. Nam adipiscing lobortis suscipit.
-
-================================================================================
-                                                              *yankee-about*
 3. About~
 
-yankee is ??? (TODO: add license type) licensed.
+yankee is MIT licensed.
 
 Get the latest version and report bugs at GitHub:
 
-TODO: github url
+ https://github.com/nielsmadan/yankee
